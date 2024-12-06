@@ -41,8 +41,16 @@ while True:
             # 감정 분석 수행
             result = DeepFace.analyze(roi, actions=['emotion'], enforce_detection=False)
             
-        # 결과 출력 (디버깅을 위해)
+            # 결과 출력 (디버깅을 위해)
             print(result)
+            
+            # 감정이 결과에 포함되어 있는지 확인
+            if result and 'dominant_emotion' in result[0]:
+                dominant_emotion = result[0]['dominant_emotion']
+                # 감정 결과 표시
+                cv2.putText(frame, f"Emotion: {dominant_emotion}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            else:
+                cv2.putText(frame, "Emotion not detected", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
             
         except Exception as e:
             print("Error in emotion detection:", e)
