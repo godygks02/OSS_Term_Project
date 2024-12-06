@@ -24,7 +24,7 @@ while True:
     
     # 얼굴 검출
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
-    if count % 5 == 0:
+    if count % 10 == 0:
         for (x, y, w, h) in faces:
             # 얼굴 영역에 사각형 표시
             cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
