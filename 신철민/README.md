@@ -25,8 +25,8 @@
 
 ## 이미지
 
-![프로젝트 실행 화면](result_img1.png)
-![프로젝트 실행 화면](result_img2.png)
+![프로젝트 실행 화면](image/result_img1.png)
+![프로젝트 실행 화면](image/result_img2.png)
 
 ## 참고 자료
 
