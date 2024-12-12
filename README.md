@@ -7,3 +7,11 @@ OpenCV와 DeepFace를 사용하여 실시간으로 웹캠을 통해 얼굴을 �
 ## 20213819 이현우
 
 Create a tool to identify news using text classification and text summation on the huggling face. Showing news shows classification and summary.
+
+## 202137566 장하림
+
+카메라를 통해 모션을 실시간으로 인식하여 움직임을 하얀 실루엣으로 시각화. 사용자의 움직임을 캡처하고, 배경과 분리하여 단순하고 깔끔한 실루엣을 제공.
+
+## 202139857 홍영철
+
+텍스트 데이터를 기반으로 감정을 분석하는 간단한 프로그램.
